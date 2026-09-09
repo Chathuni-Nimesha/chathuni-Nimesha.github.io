@@ -3,197 +3,726 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chathuni Nimesha Portfolio</title>
+    <title>Chathuni Nimesha | Full-Stack Developer</title>
+    <meta name="description" content="IT undergraduate and full-stack developer with frontend internship experience. Work with React, Node.js, Java, Spring Boot, and Python. Portfolio of Chathuni Nimesha.">
+    <link rel="canonical" href="https://chathuni-nimesha.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chathuni-nimesha.github.io/">
+    <meta property="og:title" content="Chathuni Nimesha | Full-Stack Developer">
+    <meta property="og:description" content="Full-stack web and mobile work across React, Node.js, Java, Spring Boot, and Python, with UI/UX and software testing.">
+    <meta property="og:image" content="https://chathuni-nimesha.github.io/Images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chathuni Nimesha | Full-Stack Developer">
+    <meta name="twitter:description" content="IT undergraduate and full-stack developer. Selected web, mobile, and AI project work.">
+    <meta name="twitter:image" content="https://chathuni-nimesha.github.io/Images/og-image.jpg">
+    <meta name="theme-color" content="#0B0D10">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "J.I Chathuni Nimesha Gammanpila",
+      "alternateName": "Chathuni Nimesha",
+      "url": "https://chathuni-nimesha.github.io/",
+      "image": "https://chathuni-nimesha.github.io/Images/profile.jpeg",
+      "email": "mailto:chathuni889@gmail.com",
+      "telephone": "+94716054761",
+      "jobTitle": "IT Undergraduate and Full-Stack Developer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Sri Lanka Institute of Information Technology",
+        "alternateName": "SLIIT"
+      },
+      "sameAs": [
+        "https://github.com/Chathuni-Nimesha",
+        "https://www.linkedin.com/in/chathuni-nimesha/",
+        "https://www.behance.net/chathuninimesha1"
+      ],
+      "knowsAbout": [
+        "React.js",
+        "Next.js",
+        "Node.js",
+        "Java",
+        "Spring Boot",
+        "Python",
+        "FastAPI",
+        "UI/UX",
+        "Software testing"
+      ]
+    }
+    </script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<header>
-    <img src="Images/profile.jpeg" alt="Profile">
-    <h1>J.I Chathuni Nimesha Gammanpila</h1>
-    <h3>Software Engineer | Full-Stack Developer | UI/UX Designer</h3>
+    <nav class="site-nav" aria-label="Primary">
+        <div class="nav-inner container">
+            <a class="nav-brand" href="#home" aria-label="Chathuni Nimesha home">
+                <span class="nav-mark">CN</span>
+                <span class="nav-name">Chathuni</span>
+            </a>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-controls="primary-navigation"
+                aria-expanded="false"
+                aria-label="Open menu"
+            >
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+            </button>
+            <ul id="primary-navigation" class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a class="nav-cta" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    
-</header>
+    <header id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">IT Undergraduate · Full-Stack Developer</p>
+                <h1>Chathuni Nimesha</h1>
+                <p class="hero-headline">Building software that solves real problems.</p>
+                <p class="hero-lead">
+                    I design and develop full-stack web applications with React, Node.js, Java, and Spring Boot.
+                    Through a frontend internship and project work in AI, campus systems, and UI/UX, I focus on
+                    practical, usable software.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a
+                        class="btn btn-secondary"
+                        href="https://github.com/Chathuni-Nimesha"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </div>
+                <a class="text-link" href="#contact">Let's connect →</a>
+                <ul class="hero-tech" aria-label="Core technologies">
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Python</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-frame">
+                    <picture>
+                        <source type="image/webp" srcset="Images/profile.webp">
+                        <img
+                            src="Images/profile.jpeg"
+                            alt="Portrait of J.I Chathuni Nimesha Gammanpila"
+                            width="420"
+                            height="525"
+                            fetchpriority="high"
+                            decoding="async"
+                        >
+                    </picture>
+                    <p class="hero-caption">J.I Chathuni Nimesha Gammanpila</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<section>
-    <h2>About Me</h2>
+    <main id="main">
+        <section id="about" class="section">
+            <div class="container about-layout reveal">
+                <div class="about-left">
+                    <p class="eyebrow">About me</p>
+                    <h2>Turning ideas into practical software.</h2>
+                </div>
+                <div class="about-right">
+                    <div class="about-copy">
+                        <p>
+                            I am an Information Technology undergraduate at SLIIT, focusing on full-stack
+                            development, mobile applications, and UI/UX. I completed a frontend internship
+                            at Yilai Network Technology, where I built React interfaces in Vite, including
+                            booking UI, CRUD flows, and ticket management for the Smart Campus system.
+                        </p>
+                        <p>
+                            I build web systems with React.js, Next.js, Node.js, Express.js, Java, and Spring Boot,
+                            and I use MySQL and MongoDB for data storage. SupportFlow AI is my current MVP:
+                            an agent workspace with Python, FastAPI, and retrieval-augmented answers.
+                            I design interfaces in Figma and test software with Playwright, TestNG, and Postman.
+                        </p>
+                        <p>
+                            I also contributed to an AR-IoT research project on sensor placement simulation
+                            in smart greenhouses, and I am working toward a career as a software engineer
+                            with an emphasis on structured applications, reliable APIs, and usable interfaces.
+                        </p>
+                    </div>
+                    <div class="capability-grid">
+                        <article class="capability-card">
+                            <h3>Full-Stack Development</h3>
+                            <p>React · Node.js · Java · Spring Boot</p>
+                        </article>
+                        <article class="capability-card">
+                            <h3>AI &amp; Backend</h3>
+                            <p>Python · FastAPI · MongoDB</p>
+                        </article>
+                        <article class="capability-card">
+                            <h3>Design &amp; Quality</h3>
+                            <p>Figma · UI/UX · Playwright · TestNG</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <p>
-        I am a passionate Information Technology undergraduate with a strong interest in Software Engineering, Full-Stack Development, Mobile Application Development, and UI/UX Design. I enjoy building scalable, user-friendly, and visually appealing applications using modern technologies.
+        <section id="skills" class="section section--muted">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Capabilities</p>
+                    <h2>Technical Skills</h2>
+                    <p class="section-intro">Technologies used across academic, internship, and personal projects.</p>
+                </div>
+                <div class="skill-grid reveal">
+                    <article class="skill-group">
+                        <h3><span class="skill-index">01</span> Frontend</h3>
+                        <ul class="skill-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React.js</li>
+                            <li>Next.js</li>
+                            <li>Redux</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group">
+                        <h3><span class="skill-index">02</span> Backend</h3>
+                        <ul class="skill-list">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>RESTful APIs</li>
+                            <li>JWT Authentication</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group">
+                        <h3><span class="skill-index">03</span> Database</h3>
+                        <ul class="skill-list">
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group">
+                        <h3><span class="skill-index">04</span> Testing &amp; Tools</h3>
+                        <ul class="skill-list">
+                            <li>Playwright</li>
+                            <li>TestNG</li>
+                            <li>API Testing</li>
+                            <li>Postman</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Maven</li>
+                            <li>npm</li>
+                            <li>Vite</li>
+                            <li>Linux</li>
+                            <li>VS Code</li>
+                            <li>Unity</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group">
+                        <h3><span class="skill-index">05</span> Design</h3>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>UI/UX</li>
+                            <li>Wireframing</li>
+                            <li>Prototyping</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </article>
+                    <article class="skill-group">
+                        <h3><span class="skill-index">06</span> Mobile</h3>
+                        <ul class="skill-list">
+                            <li>Kotlin</li>
+                            <li>Android Studio</li>
+                            <li>XML</li>
+                            <li>MVVM Architecture</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    </p>
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Work</p>
+                    <h2>Experience</h2>
+                    <p class="section-intro">Frontend internship completed at Yilai Network Technology.</p>
+                </div>
+                <div class="timeline reveal">
+                    <article class="info-card">
+                        <p class="eyebrow">Internship</p>
+                        <div class="info-head">
+                            <h3>Frontend Software Developer Intern</h3>
+                            <p class="job-dates">11 August 2025 — 11 February 2026</p>
+                        </div>
+                        <p class="meta">Yilai Network Technology (PVT) LTD</p>
+                        <ul class="feature-list">
+                            <li>Developed frontend interfaces using React and the Vite development environment.</li>
+                            <li>Developed booking UI for the Smart Campus system.</li>
+                            <li>Worked on CRUD-related functionality.</li>
+                            <li>Worked on ticket management functionality.</li>
+                            <li>Contributed to repository setup and the development workflow.</li>
+                        </ul>
+                        <ul class="skill-list" aria-label="Technologies used">
+                            <li>React</li>
+                            <li>Vite</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <p>
-        I currently work as a Software Engineer and have gained over four years of hands-on software development experience through academic projects, personal projects, and real-world development practices. Throughout this journey, I have designed and developed web and mobile applications, including restaurant management systems, campus management systems, payment gateway platforms, photography community websites, and Android applications.
-    </p>
+        <section id="education" class="section section--muted">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Studies</p>
+                    <h2>Education</h2>
+                </div>
+                <div class="timeline reveal">
+                    <article class="info-card">
+                        <p class="eyebrow">Undergraduate</p>
+                        <div class="info-head">
+                            <h3>Bachelor of Science (Hons) in Information Technology</h3>
+                            <p class="job-dates">2022 — 2026</p>
+                        </div>
+                        <p class="meta">Sri Lanka Institute of Information Technology (SLIIT)</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <p>
-        I have worked with modern technologies including React.js, Next.js, Node.js, Express.js, Java, Spring Boot, MySQL, MongoDB, Kotlin, Android Studio, Git, and GitHub to build full-stack applications and RESTful APIs while following software engineering best practices.
-    </p>
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Selected work</p>
+                    <h2>Selected Work</h2>
+                    <p class="section-intro">
+                        Projects that demonstrate how I approach software, design, and problem-solving.
+                        SupportFlow AI is an MVP workspace, not a production SaaS product.
+                    </p>
+                </div>
 
-    <p>
-       I am continuously expanding my technical expertise through real-world software development, personal innovation, and continuous learning. My strengths include problem-solving, teamwork, communication, and delivering high-quality software solutions.
-    </p>
+                <div class="featured-stack">
+                    <article class="project-card project-card--featured reveal">
+                        <div
+                            class="project-media project-media--placeholder"
+                            role="img"
+                            aria-label="Screenshot of SupportFlow AI to be added"
+                            data-project-image="Images/projects/supportflow.jpg"
+                            data-alt="SupportFlow AI workspace showing conversations or the AI assistant"
+                        >
+                            <p class="project-number">01</p>
+                            <p>Screenshot coming soon</p>
+                            <p class="media-hint">Project interface preview</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-status">MVP · Current project</p>
+                            <p class="project-number project-number--inline">01</p>
+                            <h3>SupportFlow AI</h3>
+                            <p class="project-tagline">AI Customer Support SaaS Platform</p>
+                            <p>
+                                An agent workspace for customer support: one inbox for conversations, a knowledge base,
+                                and knowledge-grounded answers that an agent reviews before sending.
+                            </p>
+                            <ul class="skill-list" aria-label="Technologies used">
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Vite</li>
+                                <li>Tailwind CSS</li>
+                                <li>Python</li>
+                                <li>FastAPI</li>
+                                <li>MongoDB</li>
+                                <li>ChromaDB</li>
+                                <li>Gemini</li>
+                                <li>RAG</li>
+                                <li>Testing</li>
+                            </ul>
+                            <h4>Key features</h4>
+                            <ul class="feature-list">
+                                <li>Email/password registration and login with a JWT-protected workspace</li>
+                                <li>Conversation threads, replies, and statuses (Open, Waiting, Closed, AI Resolved)</li>
+                                <li>Knowledge-base CRUD with publish/draft and Chroma ingestion for semantic search</li>
+                                <li>RAG answers and suggested replies with source citations; the agent sends the message</li>
+                                <li>Account-scoped data, conversation analytics counts, and frontend/backend unit tests</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a
+                                    class="btn-project"
+                                    href="https://github.com/Chathuni-Nimesha/SupportFlow-AI"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View SupportFlow AI on GitHub"
+                                >
+                                    GitHub <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-    <p>
-        My goal is to build a successful career as a Software Engineer by contributing to innovative projects, developing impactful solutions, and creating meaningful user experiences through modern technologies.
-    </p>
-</section>
-<section>
-    <h2>Technical Skills</h2>
+                    <article class="project-card project-card--featured reveal">
+                        <div class="project-media">
+                            <span class="project-number project-number--overlay" aria-hidden="true">02</span>
+                            <picture>
+                                <source type="image/webp" srcset="Images/projects/restaurant.webp">
+                                <img
+                                    src="Images/projects/restaurant.jpg"
+                                    alt="Grand Royal luxury restaurant landing page with Book a Table call to action"
+                                    width="1894"
+                                    height="911"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-status">Featured · Personal project</p>
+                            <p class="project-number project-number--inline">02</p>
+                            <h3>Luxury Restaurant Management System</h3>
+                            <p>
+                                Full-stack restaurant platform (Grand Royal) with a public luxury site, live menu from
+                                the API, table reservations, and an admin dashboard for menu and booking management.
+                            </p>
+                            <ul class="skill-list" aria-label="Technologies used">
+                                <li>Next.js</li>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Tailwind CSS</li>
+                                <li>Node.js</li>
+                                <li>Express</li>
+                                <li>MongoDB</li>
+                            </ul>
+                            <h4>Key features</h4>
+                            <ul class="feature-list">
+                                <li>Public landing page with menu data loaded from a REST API</li>
+                                <li>Validated table reservation form with success and error feedback</li>
+                                <li>Admin menu CRUD, availability toggle, and dashboard statistics</li>
+                                <li>Reservation search, date filter, status filter, sorting, and inline edits</li>
+                            </ul>
+                            <p class="project-role">Role: Author / full-stack (frontend and Express API)</p>
+                            <div class="project-actions">
+                                <a
+                                    class="btn-project"
+                                    href="https://github.com/Chathuni-Nimesha/hotel-restaurant-system"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View Luxury Restaurant Management System on GitHub"
+                                >
+                                    GitHub <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
 
-    <p>
-        <strong>Frontend Development:</strong>
-        React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Redux
-    </p>
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <div
+                            class="project-media project-media--placeholder"
+                            role="img"
+                            aria-label="Screenshot of Smart Campus Management System to be added"
+                            data-project-image="Images/projects/campus.jpg"
+                            data-alt="Smart Campus Management System dashboard or role-based admin view"
+                        >
+                            <p class="project-number">03</p>
+                            <p>Screenshot coming soon</p>
+                            <p class="media-hint">Dashboard or role-based admin view</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-status">Internship-related</p>
+                            <h3>Smart Campus Management System</h3>
+                            <p>
+                                Campus platform for academic and administrative work: people management, resource
+                                booking, tickets, notifications, and role-based access. During my internship I
+                                developed booking UI, CRUD-related functionality, and ticket management on the frontend.
+                            </p>
+                            <ul class="skill-list" aria-label="Technologies used">
+                                <li>React</li>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>Spring Security</li>
+                                <li>JWT</li>
+                                <li>MySQL</li>
+                                <li>Vite</li>
+                            </ul>
+                            <h4>Key features</h4>
+                            <ul class="feature-list">
+                                <li>Student, lecturer, and administrator management</li>
+                                <li>Resource booking and ticket management</li>
+                                <li>Notifications and role-based access control</li>
+                                <li>JWT authentication and REST APIs with MySQL</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a
+                                    class="btn-project"
+                                    href="https://github.com/Chathuni-Nimesha/Smart-Campas"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View Smart Campus Management System on GitHub"
+                                >
+                                    GitHub <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-    <p>
-        <strong>Backend Development:</strong>
-        Node.js, Express.js, Spring Boot, Java, RESTful APIs, JWT Authentication
-    </p>
-    <p>
-        <strong>Mobile Application Development:</strong>
-        Kotlin, Android Studio, XML, MVVM Architecture
-    </p>
+                    <article class="project-card reveal">
+                        <div
+                            class="project-media project-media--placeholder"
+                            role="img"
+                            aria-label="Screenshot of Night Photography website to be added"
+                            data-project-image="Images/projects/photography.jpg"
+                            data-alt="Night Photography website feed, reels, or learning-plan view"
+                        >
+                            <p class="project-number">04</p>
+                            <p>Screenshot coming soon</p>
+                            <p class="media-hint">Feed, reels, or learning-plan view</p>
+                        </div>
+                        <div class="project-body">
+                            <h3>Night Photography Website</h3>
+                            <p>
+                                Photography community with posts, reels, stories, comments, authentication, and
+                                learning features, built with React, Spring Boot, and MySQL.
+                            </p>
+                            <ul class="skill-list" aria-label="Technologies used">
+                                <li>React</li>
+                                <li>Redux</li>
+                                <li>Java</li>
+                                <li>Spring Boot</li>
+                                <li>Spring Security</li>
+                                <li>JWT</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <h4>Key features</h4>
+                            <ul class="feature-list">
+                                <li>Photo posts, reels, stories, and comments</li>
+                                <li>Learning plans and progress tracking</li>
+                                <li>Authentication with Spring Security and JWT</li>
+                                <li>REST API and MySQL persistence</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a
+                                    class="btn-project"
+                                    href="https://github.com/Chathuni-Nimesha/NightPhotography"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View Night Photography website on GitHub"
+                                >
+                                    GitHub <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-    
+                    <article class="project-card reveal">
+                        <div
+                            class="project-media project-media--placeholder"
+                            role="img"
+                            aria-label="Screenshot of CoreFlow Gym Management System to be added"
+                            data-project-image="Images/projects/gym.jpg"
+                            data-alt="CoreFlow Gym Android screens for workouts, progress, or schedule"
+                        >
+                            <p class="project-number">05</p>
+                            <p>Screenshot coming soon</p>
+                            <p class="media-hint">Android screens: workouts, progress, or schedule</p>
+                        </div>
+                        <div class="project-body">
+                            <h3>CoreFlow Gym Management System</h3>
+                            <p>
+                                Android app for gym members to manage workout plans, track progress, and schedule
+                                training sessions using Kotlin and MVVM.
+                            </p>
+                            <ul class="skill-list" aria-label="Technologies used">
+                                <li>Kotlin</li>
+                                <li>Android Studio</li>
+                                <li>XML</li>
+                                <li>MVVM</li>
+                                <li>RecyclerView</li>
+                                <li>Material Design</li>
+                            </ul>
+                            <h4>Key features</h4>
+                            <ul class="feature-list">
+                                <li>Workout plan management</li>
+                                <li>Fitness progress tracking</li>
+                                <li>Training session scheduling</li>
+                                <li>Material Design UI with MVVM</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a
+                                    class="btn-project"
+                                    href="https://github.com/Chathuni-Nimesha/Gym-Management-System"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View CoreFlow Gym Management System on GitHub"
+                                >
+                                    GitHub <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
 
-    <p>
-        <strong>Database Management:</strong>
-        MongoDB, MySQL
-    </p>
+                    <article class="project-card reveal">
+                        <div class="project-media">
+                            <span class="project-number project-number--overlay" aria-hidden="true">06</span>
+                            <picture>
+                                <source type="image/webp" srcset="Images/projects/payment.webp">
+                                <img
+                                    src="Images/projects/payment.png"
+                                    alt="Secure Payment form with currency, amount, and card fields"
+                                    width="1908"
+                                    height="802"
+                                    loading="lazy"
+                                    decoding="async"
+                                >
+                            </picture>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-status">Personal project</p>
+                            <h3>Secure Payment Website</h3>
+                            <p>
+                                Frontend payment interface for Visa and Mastercard flows, including amount entry,
+                                card validation, and success or failure screens. No live payment processor is integrated.
+                            </p>
+                            <ul class="skill-list" aria-label="Technologies used">
+                                <li>Next.js</li>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                            <h4>Key features</h4>
+                            <ul class="feature-list">
+                                <li>Landing page and Pay Now flow</li>
+                                <li>Multi-currency selection and custom amount</li>
+                                <li>Card number, expiry, and CVV inputs with validation</li>
+                                <li>Payment success and failed pages</li>
+                            </ul>
+                            <p class="project-role">Role: Author (frontend UI)</p>
+                            <div class="project-actions">
+                                <a
+                                    class="btn-project"
+                                    href="https://github.com/Chathuni-Nimesha/payment-website"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label="View Secure Payment Website on GitHub"
+                                >
+                                    GitHub <span aria-hidden="true">→</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <p>
-        <strong>Software Testing & Automation:</strong>
-        Playwright, TestNG, API Testing, Postman
-    </p>
+        <section id="research" class="section section--muted">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow">Research</p>
+                    <h2>Research Project</h2>
+                </div>
+                <article class="research-card reveal">
+                    <p class="project-status">Research Project</p>
+                    <h3>AR-IoT Fusion Platform for Sensor Placement Simulation in Kochchi Smart Greenhouses</h3>
+                    <p>
+                        Research project on combining augmented reality and IoT to simulate sensor placement
+                        in smart greenhouse environments.
+                    </p>
+                    <div class="project-actions">
+                        <a
+                            class="btn-project"
+                            href="https://github.com/Chathuni-Nimesha/thermo-eye"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View thermo-eye research repository on GitHub"
+                        >
+                            View Repository <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <p>
-        <strong>UI/UX Design:</strong>
-        Figma, Wireframing, Prototyping, Responsive  Design
-    </p>
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-panel reveal">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Have a project in mind?</h2>
+                    <p class="section-intro">Let's build something useful.</p>
+                    <div class="contact-actions">
+                        <a class="btn btn-primary" href="mailto:chathuni889@gmail.com">Email Me</a>
+                        <a
+                            class="btn btn-secondary btn-on-dark"
+                            href="https://github.com/Chathuni-Nimesha"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                        <a
+                            class="btn btn-secondary btn-on-dark"
+                            href="https://www.linkedin.com/in/chathuni-nimesha/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </div>
+                    <div class="contact-secondary">
+                        <a href="https://www.behance.net/chathuninimesha1" target="_blank" rel="noopener noreferrer">Behance</a>
+                        <a href="tel:+94716054761">+94 71 605 4761</a>
+                        <a href="mailto:chathuni889@gmail.com">chathuni889@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <p>
-        <strong>Tools & Technologies:</strong>
-        Git, GitHub, Maven, npm, Vite, Linux, Unity, VS Code
-    </p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-name">Chathuni Nimesha</p>
+            <ul class="footer-links">
+                <li>
+                    <a href="https://github.com/Chathuni-Nimesha" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/chathuni-nimesha/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.behance.net/chathuninimesha1" target="_blank" rel="noopener noreferrer">Behance</a>
+                </li>
+                <li>
+                    <a href="mailto:chathuni889@gmail.com">Email</a>
+                </li>
+            </ul>
+            <p class="footer-copy">&copy; 2026 Chathuni Nimesha</p>
+        </div>
+    </footer>
 
-    <p>
-        <strong>Development Methodologies:</strong>
-         Object-Oriented Programming (OOP), MVC Architecture, Agile Development
-    </p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Luxury Restaurant Management System</h3>
-        <p>Next.js | React.js | TypeScript | Node.js | Express.js | MongoDB | Tailwind CSS</p>
-        <p> 
-            Developed a full-stack restaurant management system featuring online reservation booking,
-            menu management, reservation dashboard, search, filtering, sorting, CRUD operations, and 
-            RESTful API integration using Next.js, Express.js, MongoDB and TypeScript.
-            
-        </p>
-
-        <a href="https://github.com/Chathuni-Nimesha/hotel-restaurant-system" target="_blank">
-            View Project
-        </a>
-    </div>
-
-    <div class="project">
-        <h3>Smart Campus Management System</h3>
-        <p> React.js | Spring Boot | Java | MySQL | Spring Security | JWT Authentication |
-           REST API | Maven | HTML | CSS | Vite 
-        </p>
-         
-        <p>
-        A comprehensive full-stack campus management platform designed to streamline academic and 
-        administrative operations. The system enables student, lecturer, and administrator management, 
-        resource booking, ticket management, notifications, and role-based access control. Built with 
-        a React frontend and Spring Boot backend, it features secure JWT authentication, RESTful APIs, 
-        responsive dashboards, and efficient database management using MySQL, providing a modern and 
-        scalable solution for educational institutions.
-        </p>
-        
-        <a href="https://github.com/Chathuni-Nimesha/Smart-Campas" target="_blank">
-            View Project
-        </a>
-    </div>
-
-    <div class="project">
-        <h3>Night Photography Website</h3>
-        <p>React.js | Spring Boot | Java | MySQL | Spring Security | JWT Authentication | Redux | REST API |
-            HTML | CSS | Maven 
-        </p>
-        <p>
-            A modern full-stack photography community platform that enables users to share
-             photos, create reels, follow learning plans, track progress, and interact with other 
-             photographers. Built with a React frontend and Spring Boot backend, featuring secure
-              authentication, database integration, and responsive and modern user interface.
-        </p>
-        <a href="https://github.com/Chathuni-Nimesha/NightPhotography" target="_blank">
-            View Project
-        </a>
-    </div>
-
-    <div class="project">
-        <h3>Payment Gateway Website</h3>
-        <p>Next.js | React.js | TypeScript | Tailwind CSS</p>
-        <p> 
-            A modern payment gateway interface built using Next.js, React.js,
-            TypeScript, and Tailwind CSS. Features include multi-currency selection,
-            payment form validation, Visa/Mastercard support, and payment
-            success/failure workflows.
-        </p>
-        <a href="https://github.com/Chathuni-Nimesha/payment-website" target="_blank">
-            View Project
-        </a>
-    </div>
-
-    <div class="project">
-        <h3>CoreFlow Gym Management System</h3>
-        <p>Kotlin | Android Studio | XML | MVVM Architecture | RecyclerView | Material Design </p>
-        <p>
-            A mobile gym management application developed using Kotlin and Android Studio.
-            The application enables members to manage workout plans, track fitness progress, 
-            schedule training sessions, and manage gym activities through a modern Material 
-            Design interface while following the MVVM architecture.
-        </p>
-        <a href="https://github.com/Chathuni-Nimesha/Gym-Management-System.git" target="_blank">
-            View Project
-        </a>
-    </div>
-
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>Email: 
-        <a href=""mailto:chathuni889@gmail.com">
-        chathuni889@gmail.com
-        </a>
-    </p>
-    <p>Phone No: 
-        <a href="tel:+94716054761">
-        +94 716054761
-        </a>
-        |
-        <a href="tel:+94771335301">
-        +94 771335301
-        </a>
-     </p>
-
-    <div class="social-links">
-    
-        <a href="https://www.behance.net/chathuninimesha1" target="_blank">Behance</a>
-        <a href="https://www.linkedin.com/in/chathuni-nimesha/" target="_blank">LinkedIn</a>
-    </div>
-</section>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
