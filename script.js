@@ -207,7 +207,7 @@
         }
 
         return (
-            '<article class="project-card reveal">' +
+            '<article class="project-card">' +
                 '<a class="project-media-link" href="' + escapeHtml(project.pdf) + '" ' +
                     'target="_blank" rel="noopener noreferrer" ' +
                     'aria-label="' + escapeHtml(project.pdfLabel) + '">' +
@@ -395,7 +395,12 @@
                 entry.target.classList.add("is-visible");
                 observer.unobserve(entry.target);
             });
-        }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+        }, {
+            // threshold 0: fire as soon as any pixel enters the (slightly inset) viewport.
+            // Avoids tall cards stuck at opacity:0 with threshold 0.12 + large bottom rootMargin.
+            threshold: 0,
+            rootMargin: "0px 0px -4% 0px"
+        });
 
         revealItems.forEach(function (item) {
             revealObserver.observe(item);
