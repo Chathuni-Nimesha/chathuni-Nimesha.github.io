@@ -10,8 +10,8 @@
     var PROJECTS = [
         {
             section: "research",
-            number: "01",
-            status: "Ongoing · Final-year research",
+            number: "",
+            status: "Final-year research project · Ongoing",
             title: "AR-Assisted Sensor Placement & Coverage Optimization",
             tagline: "",
             description:
@@ -34,12 +34,12 @@
         },
         {
             section: "projects",
-            number: "02",
-            status: "Featured project",
+            number: "01",
+            status: "MVP · Current project",
             title: "SupportFlow AI",
             tagline: "AI Customer Support SaaS Platform",
             description:
-                "An agent workspace for customer support with conversations, a knowledge base, and knowledge-grounded answers that an agent reviews before sending.",
+                "Current MVP agent workspace for customer support with conversations, a knowledge base, and knowledge-grounded AI answers that an agent reviews before sending.",
             image: {
                 jpg: "Images/projects/supportflow.jpg",
                 webp: "Images/projects/supportflow.webp",
@@ -61,12 +61,12 @@
         },
         {
             section: "projects",
-            number: "03",
+            number: "02",
             status: "Featured project",
             title: "Northline",
             tagline: "Secure Payment Checkout Platform",
             description:
-                "Secure checkout platform using Next.js, Stripe Payment Element, and PostgreSQL. Demo runs in Stripe test mode and does not process live charges.",
+                "Secure checkout experience built with Next.js, Stripe Payment Element, and PostgreSQL in Stripe test mode. Does not process live charges.",
             image: {
                 jpg: "Images/projects/northline.jpg",
                 webp: "Images/projects/northline.webp",
@@ -88,7 +88,7 @@
         },
         {
             section: "projects",
-            number: "04",
+            number: "03",
             status: "Featured project",
             title: "Nightlife",
             tagline: "Full-Stack Social Photography Platform",
@@ -109,16 +109,16 @@
                 "Responsive dark-themed interface"
             ],
             github: {
-                href: "https://github.com/Chathuni-Nimesha/NightPhotography",
+                href: "https://github.com/Chathuni-Nimesha/Night-Photography",
                 label: "View Nightlife on GitHub"
             }
         },
         {
             section: "projects",
-            number: "05",
+            number: "04",
             status: "Featured project",
-            title: "Grand Royal Luxury Restaurant Management System",
-            tagline: "",
+            title: "Grand Royal",
+            tagline: "Luxury Restaurant Management System",
             description:
                 "Full-stack restaurant platform with a public luxury site, live menu from the API, table reservations, and an admin dashboard for menu and booking management.",
             image: {
@@ -142,7 +142,7 @@
         },
         {
             section: "projects",
-            number: "06",
+            number: "05",
             status: "Featured project",
             title: "CoreFlow",
             tagline: "Offline Workout & Habit Tracker",
@@ -163,7 +163,7 @@
                 "MVVM architecture with 69+ unit tests"
             ],
             github: {
-                href: "https://github.com/Chathuni-Nimesha/Gym-Management-System",
+                href: "https://github.com/Chathuni-Nimesha/coreflow-android",
                 label: "View CoreFlow on GitHub"
             }
         }
@@ -191,6 +191,10 @@
             '<p class="project-tagline' + (project.tagline ? "" : " project-tagline--empty") + '">' +
                 (project.tagline ? escapeHtml(project.tagline) : "&nbsp;") +
             "</p>";
+
+        var numberHtml = project.number
+            ? '<p class="project-number">' + escapeHtml(project.number) + "</p>"
+            : "";
 
         var actionsHtml;
         if (project.github && project.github.href) {
@@ -223,7 +227,7 @@
                 '<div class="project-body">' +
                     '<div class="project-meta">' +
                         '<p class="project-status">' + escapeHtml(project.status) + "</p>" +
-                        '<p class="project-number">' + escapeHtml(project.number) + "</p>" +
+                        numberHtml +
                     "</div>" +
                     "<h3>" + escapeHtml(project.title) + "</h3>" +
                     taglineHtml +
@@ -256,60 +260,6 @@
 
     renderProjectSections();
 
-    var GALLERIES = {
-        supportflow: {
-            label: "SupportFlow AI",
-            items: [
-                { src: "Images/projects/gallery/supportflow-2.jpg", webp: "Images/projects/gallery/supportflow-2.webp", title: "Conversations workspace" },
-                { src: "Images/projects/gallery/supportflow-3.jpg", webp: "Images/projects/gallery/supportflow-3.webp", title: "Inbox and thread view" },
-                { src: "Images/projects/gallery/supportflow-4.jpg", webp: "Images/projects/gallery/supportflow-4.webp", title: "Knowledge and AI assist" },
-                { src: "Images/projects/gallery/supportflow-5.jpg", webp: "Images/projects/gallery/supportflow-5.webp", title: "Support workflow screen" },
-                { src: "Images/projects/gallery/supportflow-6.jpg", webp: "Images/projects/gallery/supportflow-6.webp", title: "Dashboard interface" }
-            ]
-        },
-        restaurant: {
-            label: "Grand Royal",
-            items: [
-                { src: "Images/projects/gallery/restaurant-1.jpg", webp: "Images/projects/gallery/restaurant-1.webp", title: "Luxury landing page" },
-                { src: "Images/projects/gallery/restaurant-2.jpg", webp: "Images/projects/gallery/restaurant-2.webp", title: "Menu experience" },
-                { src: "Images/projects/gallery/restaurant-3.jpg", webp: "Images/projects/gallery/restaurant-3.webp", title: "Reservations" },
-                { src: "Images/projects/gallery/restaurant-4.jpg", webp: "Images/projects/gallery/restaurant-4.webp", title: "Admin dashboard" },
-                { src: "Images/projects/gallery/restaurant-5.jpg", webp: "Images/projects/gallery/restaurant-5.webp", title: "Management UI" }
-            ]
-        },
-        nightlife: {
-            label: "Nightlife",
-            items: [
-                { src: "Images/projects/gallery/nightlife-2.jpg", webp: "Images/projects/gallery/nightlife-2.webp", title: "Home feed" },
-                { src: "Images/projects/gallery/nightlife-3.jpg", webp: "Images/projects/gallery/nightlife-3.webp", title: "Explore and discovery" },
-                { src: "Images/projects/gallery/nightlife-4.jpg", webp: "Images/projects/gallery/nightlife-4.webp", title: "Reels and media" },
-                { src: "Images/projects/gallery/nightlife-5.jpg", webp: "Images/projects/gallery/nightlife-5.webp", title: "Profile and activity" },
-                { src: "Images/projects/gallery/nightlife-6.jpg", webp: "Images/projects/gallery/nightlife-6.webp", title: "Community interface" }
-            ]
-        },
-        coreflow: {
-            label: "CoreFlow",
-            items: [
-                { src: "Images/projects/gallery/coreflow-1.jpg", webp: "Images/projects/gallery/coreflow-1.webp", title: "Home overview" },
-                { src: "Images/projects/gallery/coreflow-2.jpg", webp: "Images/projects/gallery/coreflow-2.webp", title: "Habits tracker" },
-                { src: "Images/projects/gallery/coreflow-3.jpg", webp: "Images/projects/gallery/coreflow-3.webp", title: "Workout flow" },
-                { src: "Images/projects/gallery/coreflow-4.jpg", webp: "Images/projects/gallery/coreflow-4.webp", title: "Progress view" },
-                { src: "Images/projects/gallery/coreflow-5.jpg", webp: "Images/projects/gallery/coreflow-5.webp", title: "Reminders and settings" },
-                { src: "Images/projects/gallery/coreflow-6.jpg", webp: "Images/projects/gallery/coreflow-6.webp", title: "Mobile UI detail" }
-            ]
-        },
-        northline: {
-            label: "Northline",
-            items: [
-                { src: "Images/projects/gallery/northline-1.jpg", webp: "Images/projects/gallery/northline-1.webp", title: "Landing — Stripe test mode" },
-                { src: "Images/projects/gallery/northline-2.jpg", webp: "Images/projects/gallery/northline-2.webp", title: "Checkout flow" },
-                { src: "Images/projects/gallery/northline-3.jpg", webp: "Images/projects/gallery/northline-3.webp", title: "Payment status" },
-                { src: "Images/projects/gallery/northline-4.jpg", webp: "Images/projects/gallery/northline-4.webp", title: "Auth and security UI" },
-                { src: "Images/projects/gallery/northline-5.jpg", webp: "Images/projects/gallery/northline-5.webp", title: "History and receipts" }
-            ]
-        }
-    };
-
     function setMenuOpen(isOpen) {
         if (!toggle || !menu) {
             return;
@@ -332,7 +282,6 @@
             });
         });
 
-        // Close mobile nav on outside click — never block mailto/tel/external navigation.
         document.addEventListener("click", function (event) {
             var anchor = event.target.closest ? event.target.closest("a") : null;
             var href = anchor ? (anchor.getAttribute("href") || "") : "";
@@ -396,8 +345,6 @@
                 observer.unobserve(entry.target);
             });
         }, {
-            // threshold 0: fire as soon as any pixel enters the (slightly inset) viewport.
-            // Avoids tall cards stuck at opacity:0 with threshold 0.12 + large bottom rootMargin.
             threshold: 0,
             rootMargin: "0px 0px -4% 0px"
         });
@@ -411,178 +358,7 @@
         });
     }
 
-    /* ---------- Gallery ---------- */
-
-    var modal = document.getElementById("gallery-modal");
-    var galleryImage = document.getElementById("gallery-image");
-    var galleryCaption = document.getElementById("gallery-caption");
-    var galleryTitle = document.getElementById("gallery-title");
-    var galleryKicker = document.getElementById("gallery-kicker");
-    var galleryCounter = document.getElementById("gallery-counter");
-    var galleryThumbs = document.getElementById("gallery-thumbs");
-    var galleryPrev = document.getElementById("gallery-prev");
-    var galleryNext = document.getElementById("gallery-next");
-    var activeGallery = null;
-    var activeIndex = 0;
-    var lastTrigger = null;
-
-    if (modal) {
-        modal.setAttribute("hidden", "");
-        modal.setAttribute("inert", "");
-    }
-
-    function isGalleryOpen() {
-        return modal && !modal.hasAttribute("hidden");
-    }
-
-    function renderThumbs() {
-        if (!galleryThumbs || !activeGallery) {
-            return;
-        }
-
-        galleryThumbs.innerHTML = "";
-        activeGallery.items.forEach(function (item, index) {
-            var button = document.createElement("button");
-            button.type = "button";
-            button.className = "gallery-thumb" + (index === activeIndex ? " is-active" : "");
-            button.setAttribute("role", "listitem");
-            button.setAttribute("aria-label", "Show " + item.title);
-            button.setAttribute("aria-current", index === activeIndex ? "true" : "false");
-
-            var img = document.createElement("img");
-            img.src = item.src;
-            img.alt = "";
-            img.loading = "lazy";
-            img.decoding = "async";
-            button.appendChild(img);
-
-            button.addEventListener("click", function () {
-                showSlide(index);
-            });
-
-            galleryThumbs.appendChild(button);
-        });
-    }
-
-    function showSlide(index) {
-        if (!activeGallery || !galleryImage) {
-            return;
-        }
-
-        var total = activeGallery.items.length;
-        activeIndex = (index + total) % total;
-        var item = activeGallery.items[activeIndex];
-
-        galleryImage.src = item.src;
-        galleryImage.alt = item.title;
-        if (galleryCaption) {
-            galleryCaption.textContent = item.title;
-        }
-        if (galleryTitle) {
-            galleryTitle.textContent = item.title;
-        }
-        if (galleryKicker) {
-            galleryKicker.textContent = activeGallery.label;
-        }
-        if (galleryCounter) {
-            galleryCounter.textContent = (activeIndex + 1) + " / " + total;
-        }
-
-        if (galleryThumbs) {
-            var thumbs = galleryThumbs.querySelectorAll(".gallery-thumb");
-            thumbs.forEach(function (thumb, thumbIndex) {
-                var isActive = thumbIndex === activeIndex;
-                thumb.classList.toggle("is-active", isActive);
-                thumb.setAttribute("aria-current", isActive ? "true" : "false");
-            });
-        }
-    }
-
-    function openGallery(key, trigger) {
-        var gallery = GALLERIES[key];
-        if (!gallery || !gallery.items.length || !modal) {
-            return;
-        }
-
-        activeGallery = gallery;
-        activeIndex = 0;
-        lastTrigger = trigger || null;
-        modal.removeAttribute("hidden");
-        modal.removeAttribute("inert");
-        document.body.classList.add("gallery-open");
-        renderThumbs();
-        showSlide(0);
-
-        var closeBtn = modal.querySelector(".gallery-close");
-        if (closeBtn) {
-            closeBtn.focus();
-        }
-    }
-
-    function closeGallery() {
-        if (!modal || !isGalleryOpen()) {
-            return;
-        }
-
-        modal.setAttribute("hidden", "");
-        modal.setAttribute("inert", "");
-        document.body.classList.remove("gallery-open");
-        activeGallery = null;
-
-        if (galleryImage) {
-            galleryImage.removeAttribute("src");
-            galleryImage.alt = "";
-        }
-
-        if (lastTrigger && typeof lastTrigger.focus === "function") {
-            lastTrigger.focus();
-        }
-    }
-
-    document.querySelectorAll("[data-gallery]").forEach(function (button) {
-        button.addEventListener("click", function () {
-            openGallery(button.getAttribute("data-gallery"), button);
-        });
-    });
-
-    if (modal) {
-        modal.querySelectorAll("[data-gallery-close]").forEach(function (el) {
-            el.addEventListener("click", closeGallery);
-        });
-    }
-
-    if (galleryPrev) {
-        galleryPrev.addEventListener("click", function () {
-            showSlide(activeIndex - 1);
-        });
-    }
-
-    if (galleryNext) {
-        galleryNext.addEventListener("click", function () {
-            showSlide(activeIndex + 1);
-        });
-    }
-
     document.addEventListener("keydown", function (event) {
-        if (isGalleryOpen()) {
-            if (event.key === "Escape") {
-                event.preventDefault();
-                closeGallery();
-                return;
-            }
-            if (event.key === "ArrowLeft") {
-                event.preventDefault();
-                showSlide(activeIndex - 1);
-                return;
-            }
-            if (event.key === "ArrowRight") {
-                event.preventDefault();
-                showSlide(activeIndex + 1);
-                return;
-            }
-            return;
-        }
-
         if (event.key === "Escape" && toggle) {
             setMenuOpen(false);
             toggle.focus();
