@@ -323,7 +323,7 @@ a:hover {
 
 .hero-visual {
     justify-self: end;
-    width: min(100%, 420px);
+    width: min(100%, 320px);
 }
 
 .hero-frame {
@@ -358,8 +358,11 @@ a:hover {
 .hero-visual img {
     display: block;
     width: 100%;
+    max-width: 100%;
+    height: auto;
     aspect-ratio: 4 / 5;
     object-fit: cover;
+    object-position: center top;
     border-radius: 14px;
 }
 
@@ -1411,7 +1414,7 @@ body.gallery-open {
 
     .hero-visual {
         justify-self: start;
-        width: min(100%, 380px);
+        width: min(100%, 280px);
         order: -1;
     }
 
@@ -1471,7 +1474,8 @@ body.gallery-open {
     }
 
     .hero-visual {
-        width: 100%;
+        width: min(100%, 240px);
+        justify-self: center;
     }
 
     .hero-frame::before {
